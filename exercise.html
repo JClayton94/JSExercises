@@ -1,0 +1,43 @@
+<html>
+
+    <header>
+        <title>JS Stuff</title>
+    </header>
+
+    <body>
+        <script src="exerciseJS.js"></script>
+        <div id="input">
+            Name:       <input type="text" id="name">  Age:        <input type="text" id="age">  Occupation: <input type="text" id="occupation"><br>
+        </div>
+
+        <button id="button1" onclick="makePerson()">
+            Submit
+        </button><br><br>
+
+        <button id="button2" onclick="displayName()">
+                Click Me
+        </button>
+        <br>
+        <br>
+
+        Input number: <input type="number" id="number">
+
+        <button id="loopButton" onclick="loopNums()">
+                Click Me
+        </button><br>
+        Iterations: <input type="number" id="FBIterations"> First word: <input type="text" id="fWord"> Second word: <input type="text" id="sWord">
+        <button id="fizzBuzz" onclick="fizzBuzz(document.getElementById('FBIterations').value, document.getElementById('fWord').value, document.getElementById('sWord').value)">
+                FizzBuzz
+        </button><br>
+
+        <button id="clear" onclick="document.getElementById('textArea').innerHTML = ''">
+               Clear
+        </button><br>
+        Input number (iteration 4): <input type="number" id="number2">
+        <button id="thingy" onclick="iteration4(document.getElementById('number2').value)">
+                Click Me
+        </button><br><br><br>
+
+        <div id="textArea"></div>
+    </body>
+</html>
