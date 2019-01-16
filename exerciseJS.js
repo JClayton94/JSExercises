@@ -101,3 +101,27 @@ function iteration4(input){
     }
     document.getElementById("textArea").innerHTML += "Total number of iterations: " + i;
 }
+function triples(triple){
+
+    let numOfTriples = 0;
+
+    for(i=0; i <= triple.value.length-2; i++){
+
+        if(triple.value.charAt(i) == triple.value.charAt(i+1) && triple.value.charAt(i) == triple.value.charAt(i+2)){
+            numOfTriples++;
+        }
+
+    }
+    document.getElementById("textArea").innerHTML = numOfTriples;
+
+}
+function dom1CreatePara() {
+
+    document.getElementById("textArea").innerHTML = "<p id='para'> Paragraph created! </p>";
+
+}
+function dom1text(text) {
+
+    document.getElementById("para").innerHTML = text.value;
+
+}

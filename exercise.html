@@ -1,6 +1,7 @@
 <html>
 
     <header>
+            <meta charset="utf-8"/>
         <title>JS Stuff</title>
     </header>
 
@@ -36,7 +37,17 @@
         Input number (iteration 4): <input type="number" id="number2">
         <button id="thingy" onclick="iteration4(document.getElementById('number2').value)">
                 Click Me
-        </button><br><br><br>
+        </button>
+        
+        <br>
+        <input type="text" id="S4"> <button id="S4button" onclick="triples(document.getElementById('S4'))">String 4</button>
+        <br>
+
+        <button id="makePara" onclick="dom1CreatePara();">Make paragraph</button>
+
+        <input type="text" id="paraText"><button id="populatePara" onclick="dom1text(document.getElementById('paraText'))">Submit</button>
+
+        <br><br><br>
 
         <div id="textArea"></div>
     </body>
